@@ -1,12 +1,12 @@
-U1=table2array(Proba2(:,5));
-U2=table2array(Proba2(:,6));
-U3=table2array(Proba2(:,7));
-Y1=table2array(Proba2(:,8));
-Y2=table2array(Proba2(:,9));
-Y3=table2array(Proba2(:,10));
-% Yzad1=table2array(Proba2(:,11));
-% Yzad2=table2array(Proba2(:,12));
-% Yzad3=table2array(Proba2(:,13));
+U1=table2array(WATERTest(:,5));
+U2=table2array(WATERTest(:,6));
+U3=table2array(WATERTest(:,7));
+Y1=table2array(WATERTest(:,8));
+Y2=table2array(WATERTest(:,9));
+Y3=table2array(WATERTest(:,10));
+% Yzad1=table2array(WATERTest(:,11));
+% Yzad2=table2array(WATERTest(:,12));
+% Yzad3=table2array(WATERTest(:,13));
 
 % i=0;
 % len=length(U1);
@@ -57,13 +57,13 @@ Y3=table2array(Proba2(:,10));
 % 
 figure;
 stairs(Y1);title('Wartoœæ wyjœcia Y1');xlabel('k');ylabel('wartoœæ sygna³u');ylim([-5,20]);
-hold on; %stairs(Yzad1);
+hold on; stairs(Yzad3);
 legend('Sygna³ wyjœciowy','Wartoœæ zadana','Location','southeast');
-matlab2tikz('Y1_overflow.tex' ,'showInfo',false);
+matlab2tikz('Y3_PID_interrupts.tex' ,'showInfo',false);
 
 figure;
-stairs(U1);title('Wartoœæ wejœcia U1');xlabel('k');ylabel('wartoœæ sygna³u');ylim([-1.5,1.5]);
+stairs(U3);title('Wartoœæ wejœcia U3');xlabel('k');ylabel('wartoœæ sygna³u');ylim([-1.5,1.5]);
 legend('Sygna³ steruj¹cy','Location','southeast');
-matlab2tikz('U1 _overflow.tex','showInfo',false);
+matlab2tikz('U3_PID_interrupts.tex','showInfo',false);
 % 
 % 

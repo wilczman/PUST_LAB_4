@@ -50,12 +50,12 @@ Y2=table2array(HCTest(:,8));
 % figure;  plot(Y2);
 
 figure;
-stairs(Y2);title('Wartoœæ wyjœcia Y2');xlabel('k');ylabel('wartoœæ sygna³u');ylim([-5,300]);
+stairs(Y1);title('Wartoœæ wyjœcia Y1');xlabel('k');ylabel('wartoœæ sygna³u');ylim([-5,300]);
 legend('Sygna³ wyjœciowy','Wartoœæ zadana','Location','southeast');
-matlab2tikz('Y2_overheat.tex' ,'showInfo',false);
+matlab2tikz('Y1_overheat.tex' ,'showInfo',false);
 
 figure;
-stairs(U2);title('Wartoœæ wejœcia U2');xlabel('k');ylabel('wartoœæ sygna³u');ylim([-5,1100]);
+stairs(U1);title('Wartoœæ wejœcia U1');xlabel('k');ylabel('wartoœæ sygna³u');ylim([-5,1100]);
 legend('Sygna³ steruj¹cy','Location','southeast');
-matlab2tikz('U2_overheat.tex','showInfo',false);
+matlab2tikz('U1_overheat.tex','showInfo',false);
 
