@@ -13,7 +13,7 @@ clear all
     
     load('odp_skok.mat')
     
-    D=100; N=5; Nu=30;   %najlepsze parametry eksperymentalne
+    D=50; N=50; Nu=30;   %najlepsze parametry eksperymentalne
     psi=[1 1];
     lambda=[1 1];
     
